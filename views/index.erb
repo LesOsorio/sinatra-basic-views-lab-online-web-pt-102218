@@ -5,11 +5,12 @@
     <h2>Bet You Can't Bowl A Strike Every Time</h2>
   </head>
   <body>
-    <% if 1 == 2 %>
-  <p>1 equals 2.</p>
-<% else %>
-  <p>1 does not equal 2.</p>
-<% end %>
+    <ul>
+  <% squares = [1, 4, 9, 16] %>
+  <% squares.each do |square| %>
+    <li><%= square %></li>
+  <% end %>
+</ul>
     <p> </p>
   </body>
 </html>
